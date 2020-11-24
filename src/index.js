@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HelloComponent from './component/helloComponent'; 
+import Home from './container/home/Home';
 
-ReactDOM.render(<HelloComponent/>,
+ReactDOM.render(<Home/>,
   document.getElementById('root')
 );
 
