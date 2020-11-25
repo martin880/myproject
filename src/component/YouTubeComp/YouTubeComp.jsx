@@ -1,17 +1,23 @@
 import React from 'react';
 import './YouTubeComp.css';
 
-const YouTubeComp = () => {
+const YouTubeComp = (props) => {
         return (
             <div className="youtube-wrapper">
                 <div className="img-thumb">
-                    <img src= "" alt="image"/>
-                    <p className="time">7.12</p>
+                    <img src="image/Pexel.jpg" alt=""/>
+                    <p className="time">{props.time}</p>
                 </div>
-                <p className="title">title here</p>
-                <p className="desc">desc here</p>
+                <p className="title">{props.title}</p>
+                <p className="desc">{props.desc}</p>
             </div>
         )
+}
+
+YouTubeComp.defaultProps = {
+    time : '00.00',
+    title: 'Title here',
+    desc: 'xx kali ditonton. x minggu yang lalu'
 }
 
 export default YouTubeComp;

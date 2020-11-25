@@ -21,6 +21,7 @@ p.time {
     color: white;
     bottom: 6px;
     margin: 0;
+    right: 6px;
     background: black;
     padding: 4px;
     border-radius: 4px;
@@ -35,4 +36,12 @@ p.title {
     margin: 0px;
     margin-top: 10px;
     color: #2d2d2d;
+}
+p.desc {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0px;
+    margin-top: 10px;
+    color: #bebebe;
 }
