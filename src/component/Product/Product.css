@@ -98,7 +98,7 @@
 .button {
     background-color: rgb(19, 235, 52);
     border: none;
-    color: black;
+    color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -109,7 +109,7 @@
   }
   
   .button:hover {
-    background-color: #beff0d;
+    background-color: #0032d8;
     color: white;
   }
 
