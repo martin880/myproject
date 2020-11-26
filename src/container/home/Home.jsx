@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import Blogpost from '../../component/Blogpost/Blogpost';
 // import YouTubeComp from '../../component/YouTubeComp/YouTubeComp';
 // import Product from '../../component/Product/Product';
-import LifeCycleComp from '../../component/LifeCycleComp/LifeCycleComp';
+// import LifeCycleComp from '../../component/LifeCycleComp/LifeCycleComp';
 
 class Home extends Component {
     state = {
@@ -28,13 +29,16 @@ class Home extends Component {
                 {/* <p>Counter</p>
                 <hr/>
                 <Product/> */}
-                <p>LifeCycle Component</p>
+                {/* <p>LifeCycle Component</p>
                 <hr/>
                 {
                      //jika statecomponent bernilai true maka munculkan LifeCycleComp,jika statecomponent bernilai false maka tidak memunculkan komponen apapun.
                     this.state.showComponent ?
                     <LifeCycleComp/> : null
-                }
+                } */}
+                <p>Blog Post</p>
+                <hr/>
+                <Blogpost/>
             </div>
         )
     }
