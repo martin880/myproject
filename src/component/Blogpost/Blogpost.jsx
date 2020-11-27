@@ -5,7 +5,13 @@ import Axios from 'axios';
 
 class Blogpost extends Component {
     state = {
-        post: []
+        post: [],
+        formBlogpost: {
+            id: 1,
+            title: '',
+            body: '',
+            userId: 1
+        }
     }
 
     getPostAPI = () => {
@@ -23,14 +29,18 @@ class Blogpost extends Component {
         })
     }
 
+    handleFormChange = (event) => {
+        // console.log('form change', event.target)
+        let formBlogpostNew = {...this.state.formBlogpost};
+        formBlogpostNew[event.target.name] = event.target.value;
+        this.setState({
+            formBlogpost: formBlogpostNew
+        }, () => {
+            console.log('value obj formBlogPost: ', this.state.formBlogpost)
+        })
+    }
+
    componentDidMount () {
-    // fetch('https://jsonplaceholder.typicode.com/posts')
-    // .then(response => response.json())
-    // .then(json => {
-    //     this.setState ({
-    //         post: json
-    //     })
-    //  })
     this.getPostAPI();
    }
     
@@ -38,6 +48,13 @@ class Blogpost extends Component {
         return (
             <Fragment>
             <p className="section-title">Blog Post</p>
+            <div className="form-add-post">
+                <label htmlFor="title">Title</label>
+                <input type="text" name="title" placeholder="add title" onChange={this.handleFormChange}/>
+                <label htmlFor="body">Blog Content</label>
+                <textarea name="body" id="body" cols="30" rows="10" placeholder="add blog content" onChange={this.handleFormChange}/>
+                <button className="btn-submit">Simpan</button>
+            </div>
             {
                 this.state.post.map(post => {
                     return <Post key={post.id} data= {post} remove={this.handleRemove} />
