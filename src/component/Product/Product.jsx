@@ -16,6 +16,8 @@ class Product extends Component {
     render() {
         return (
             <Fragment>
+            <p className="head-title">Halaman Product</p>
+            <hr/>
                 <div className="header">
                     <div className="logo">
                         <img src="image/vintage.png" alt=""/>

@@ -1,3 +1,11 @@
+.head-title{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3d4a6e;
+    margin: 10px 16px;
+}
+
 .btn {
     padding: 10px 36px;
     border: 1px solid #3F51B5;
