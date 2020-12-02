@@ -10,6 +10,7 @@
     height: 118px;
     overflow: hidden;
     position: relative;
+    margin-left: 10px;
 }
 
 .img-thumb img {
@@ -33,7 +34,7 @@ p.title {
     font-size: 14px;
     font-weight: 600;
     text-transform: capitalize;
-    margin: 0px;
+    margin: 0px 10px;
     margin-top: 10px;
     color: #2d2d2d;
 }
@@ -41,7 +42,7 @@ p.desc {
     font-size: 12px;
     font-weight: 400;
     text-transform: capitalize;
-    margin: 0px;
+    margin: 0px 10px;
     margin-top: 10px;
     color: #bebebe;
 }

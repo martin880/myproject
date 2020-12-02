@@ -25,18 +25,18 @@
 
 .img-thumb {
     width: 200px;
-    height: 150px;
+    height: 150px !important;
     margin-right: 20px;
 }
 
 .img-thumb img {
     width: 200px;
-    height: 150px;
+    height: 150px !important;
     object-fit: cover;
 }
 
 .content {
-    flex: 1
+    flex: 1;
 }
 
 .content p.title {
@@ -50,7 +50,7 @@
 content p.desc {
     margin: 0px;
     font-size: 16px;
-    color: #4a4a4a
+    color: #4a4a4a;
 }
 
 .remove {
@@ -67,6 +67,7 @@ content p.desc {
     background: #ff4747;
     transform: scale(1.1);
 }
+
 .update {
     padding: 8px 12px;
     background: rgb(1, 34, 71);
@@ -113,7 +114,6 @@ content p.desc {
     color: #607d8b;
     
 }
-
 
 button.btn-submit {
     outline: none;
