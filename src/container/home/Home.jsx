@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import Blogpost from '../../component/Blogpost/Blogpost';
+import Blogpost from '../Pages/Blogpost/Blogpost';
 // import YouTubeComp from '../../component/YouTubeComp/YouTubeComp';
-import Product from '../../component/Product/Product';
-import LifeCycleComp from '../../component/LifeCycleComp/LifeCycleComp';
+import Product from '../Pages/Product/Product';
+import LifeCycleComp from '../Pages/LifeCycleComp/LifeCycleComp';
 import {BrowserRouter as Router,Route,Link, BrowserRouter} from "react-router-dom";
 import './Home.css';
 
