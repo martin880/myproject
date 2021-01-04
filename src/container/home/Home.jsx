@@ -8,9 +8,9 @@ import Product from '../Pages/Product/Product';
 import LifeCycleComp from '../Pages/LifeCycleComp/LifeCycleComp';
 import YouTubeCompPage from '../Pages/YouTubeCompPage/YoutubeCompPage';
 import DetailPost from '../Pages/Blogpost/DetailPost/DetailPost';
-import './Home.css';
 
 //style
+import './Home.css';
 class Home extends Component {
     state = {
         showComponent: true
@@ -27,7 +27,7 @@ class Home extends Component {
                     <Link to="/youtube-component">YouTube</Link>
                 </div>
                     <Route path="/" exact component={Blogpost}/>
-                    <Route path="/detail-post/:id" component={DetailPost}/>
+                    <Route path="/detail-post/:postID" component={DetailPost}/>
                     <Route path="/product" component={Product}/>
                     <Route path="/lifecycle" component={LifeCycleComp}/>
                     <Route path="/youtube-component" component={YouTubeCompPage}/>
