@@ -1,10 +1,11 @@
-.head-title{
+.head-title {
     margin: 0px;
     font-size: 20px;
     font-weight: bold;
     color: #3d4a6e;
     margin: 10px 16px;
 }
+
 .section-title {
     margin-left: 20px;
     font-size: 20px;
@@ -14,10 +15,10 @@
 
 .post {
     display: flex;
-    border: 1px solid rgba(0,0,0,0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     width: 500px;
     padding: 10px;
-    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -25,13 +26,13 @@
 
 .img-thumb {
     width: 200px;
-    height: 150px !important;
+    height: 150px;
     margin-right: 20px;
 }
 
 .img-thumb img {
     width: 200px;
-    height: 150px !important;
+    height: 150px;
     object-fit: cover;
 }
 
@@ -47,7 +48,11 @@
     margin-bottom: 16px;
 }
 
-content p.desc {
+.content p.title:hover {
+    cursor: pointer;
+}
+
+.content p.desc {
     margin: 0px;
     font-size: 16px;
     color: #4a4a4a;
@@ -63,7 +68,7 @@ content p.desc {
     font-weight: bold;
 }
 
-.remove:hover{
+.remove:hover {
     background: #ff4747;
     transform: scale(1.1);
 }
@@ -78,20 +83,19 @@ content p.desc {
     font-weight: bold;
 }
 
-.update:hover{
+.update:hover {
     background: #0066eb;
     transform: scale(1.1);
 }
 
 .form-add-post {
-    box-shadow: 0px  0px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
     width: 500px;
     margin-left: 20px;
     padding: 10px;
     margin-bottom: 50px;
     border-radius: 4px;
 }
-
 
 .form-add-post label {
     display: block;
@@ -101,8 +105,8 @@ content p.desc {
     margin-bottom: 10px;
 }
 
-
-.form-add-post input, .form-add-post textarea {
+.form-add-post input,
+.form-add-post textarea {
     outline: none;
     border: 1px solid #607d8b;
     padding: 12px;
@@ -112,7 +116,6 @@ content p.desc {
     box-sizing: border-box;
     font-size: 12px;
     color: #607d8b;
-    
 }
 
 button.btn-submit {
@@ -126,7 +129,7 @@ button.btn-submit {
     margin-top: 30px;
 }
 
-button.btn-submit:hover{
+button.btn-submit:hover {
     cursor: pointer;
     transform: scale(1.1);
     background: #3e32a8;
