@@ -4,7 +4,8 @@ import './Product.css';
 
 class Product extends Component {
     state = {
-        order: 4
+        order: 4,
+        name: 'Martin'
     }
 
     handleCounterChange = (newValue) => {

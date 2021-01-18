@@ -8,13 +8,47 @@ const initialState = {
 
 //reducer
 const rootReducer = (state = initialState, action) => {
-    return state;
+    // if (action.type === 'ADD_AGE') {
+    //     return {
+    //         ...state,
+    //         age: state.age + 1
+    //     }
+    // }
+    // if (action.type === 'CHANGE_VALUE') {
+    //     return {
+    //         ...state,
+    //         value: state.value + action.newValue
+    //     }
+    // }
+    // return state;
+
+    // menggunakan method switch lebih rapih
+    switch (action.type) {
+        case 'ADD_AGE':
+            return {
+                ...state,
+                age: state.age + 1
+            }
+        case 'CHANGE_VALUE':
+            return {
+                ...state,
+                value: state.value + action.newValue
+            }
+        default:
+            return state;
+    }
 }
 
 //store
 const store = createStore(rootReducer);
 console.log(store.getState());
 
-//dispatching action
-
 //subscription
+store.subscribe(() => {
+    console.log('store change: ', store.getState());
+})
+
+//dispatching action
+store.dispatch({ type: 'ADD_AGE' })
+store.dispatch({ type: 'CHANGE_VALUE', newValue: 12 });
+console.log(store.getState());
